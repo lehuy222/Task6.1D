@@ -1,0 +1,271 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00BCD4"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Interests"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You may select multiple topics"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Algorithm"
+                android:textOn="Algorithm"
+                android:textSize="15sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Data Structure"
+                android:textOn="Data Structure"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton3"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Web Development"
+                android:textOn="Web Development"
+                android:textSize="15sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton4"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Testing"
+                android:textOn="Testing"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Data Science"
+                android:textOn="Data Science"
+                android:textSize="15sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggleButton6"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Artificial Intelligent"
+                android:textOn="Artificial Intelligent"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton7"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Math"
+                android:textOn="Math"
+                android:textSize="15sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton8"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Physics"
+                android:textOn="Physics"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton9"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Chemistry"
+                android:textOn="Chemistry"
+                android:textSize="15sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggleButton10"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Bio Technology"
+                android:textOn="Bio Technology"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton11"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Software Development"
+                android:textOn="Software Development"
+                android:textSize="13sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton12"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="15dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Hardware"
+                android:textOn="Hardware"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton13"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Cloud Computing"
+                android:textOn="Cloud Computing"
+                android:textSize="15sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton14"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Edge Devices"
+                android:textOn="Edge Devices"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton15"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Optimization"
+                android:textOn="Optimization"
+                android:textSize="15sp"/>
+
+            <ToggleButton
+                android:id="@+id/toggleButton16"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toggle_button_selector"
+                android:padding="10dp"
+                android:textColor="@color/toggle_button_text_color_selector"
+                android:textOff="Architecture"
+                android:textOn="Architecture"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4">
+
+    <TextView
+        android:id="@+id/tv_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, Your Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/user"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
+    android:layout_toEndOf="@id/tv_greeting"
+    android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_task_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have 1 task due"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_greeting"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:padding="8dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_task_count"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        card_view:cardElevation="4dp"
+        card_view:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_task_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/task" />
+
+            <TextView
+                android:id="@+id/tv_task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/img_task_icon"
+                android:text="Generated Task 1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/tv_task_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_task_title"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/img_task_icon"
+                android:text="Small Description for the generated Task"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <Button
+                android:id="@+id/btn_task_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_task_description"
+                android:layout_alignStart="@id/tv_task_description"
+                android:text="Do the task"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
